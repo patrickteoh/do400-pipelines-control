@@ -1,8 +1,8 @@
 
-de('nodejs') {
+stage('nodejs') {
 stage('Checkout') {
 git branch: 'main',
-url: 'https://github.com/YOUR_GITHUB_USER/do400-pipelines-control'
+url: 'https://github.com/patrickteoh/do400-pipelines-control'
 }
 stage('Backend Tests') {
 sh 'node ./backend/test.js'
