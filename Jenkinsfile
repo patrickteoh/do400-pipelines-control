@@ -1,5 +1,5 @@
 
-stage('nodejs') {
+node('nodejs') {
   stage('Checkout') {
     git branch: 'main',
       url: 'https://github.com/patrickteoh/do400-pipelines-control'
